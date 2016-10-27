@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/w_circle"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.smartcity.util.TextViewRoboto
+                    android:id="@+id/list_item_notification_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Message"
+                    android:textSize="17dp"
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold"/>
+
+                <com.smartcity.util.TextViewRoboto
+                    android:id="@+id/list_item_notification_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Message"
+                    android:textSize="15dp"
+                    android:textColor="@color/yellow"/>
+
+                <com.smartcity.util.TextViewRoboto
+                    android:id="@+id/list_item_notification_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="15dp"
+                    android:textColor="@color/yellow"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:layout_marginRight="5dp">
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:numStars="1"
+                    style="@style/customRatingBar"
+                    android:layout_gravity="right"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <com.smartcity.util.TextViewRoboto
+                        android:id="@+id/list_item_notification_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12-10-2016"
+                        android:textSize="14dp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"/>
+
+                    <com.smartcity.util.TextViewRoboto
+                        android:id="@+id/list_item_notification_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9:00"
+                        android:textSize="14dp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"/>
+
+            <com.smartcity.util.TextViewRoboto
+                android:id="@+id/list_item_notification_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/hash_tag"
+                android:drawablePadding="8dp"
+                android:text="ID "
+                android:textSize="14dp"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <com.smartcity.util.ButtonTextRoboto
+                    android:id="@+id/list_item_notification_contact_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/contact_us_bg"
+                    android:layout_marginRight="8dp"
+                    android:drawableLeft="@drawable/call_icon"
+                    android:text="@string/contact_us"
+                    android:textAllCaps="false"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="2dip"
+                    android:gravity="center"
+                    android:paddingLeft="30dip"
+                    android:paddingRight="26dip"
+                    android:singleLine="true"/>
+
+                <com.smartcity.util.ButtonTextRoboto
+                    android:id="@+id/list_item_notification_show_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/contact_us_bg"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/show_status"
+                    android:textAllCaps="false"
+                    android:textSize="10dp"
+                    android:layout_gravity="center"
+                    android:drawablePadding="2dip"
+                    android:gravity="center"
+                    android:paddingLeft="30dip"
+                    android:paddingRight="26dip"
+                    android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/yellow_bg"
+            android:layout_marginTop="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.smartcity.util.TextViewRoboto
+                    android:id="@+id/list_item_notification_thank_support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thank you for you support!"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"/>
+
+                <com.smartcity.util.TextViewRoboto
+                    android:id="@+id/list_item_notification_thank_support_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XYZ person"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical|center"/>
+
+                <com.smartcity.util.TextViewRoboto
+                    android:id="@+id/list_item_notification_thank_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BJP XYZ Matadar Sangha"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical|center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.smartcity.util.TextViewRoboto
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"/>
+
+                <com.smartcity.util.TextViewRoboto
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"/>
+
+                <com.smartcity.util.TextViewRoboto
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Whiz IT Services"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.smartcity.util.TextViewRoboto
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shirish Deshpande"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical|center"/>
+
+                <com.smartcity.util.TextViewRoboto
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chitanis"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical|center"/>
+
+                <com.smartcity.util.TextViewRoboto
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BJP Parvati Matadar Sangha"
+                    android:textSize="10dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout_yellow_lines"
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_below="@id/title"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/yellow"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_below="@id/title"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/yellow"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dark_grey"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/fragment_home_imageview_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gallery"
+            android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_relativelayout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/audioview"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_above="@id/bottom_relativelayout">
+
+        <ImageButton
+            android:id="@+id/chat_send_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:enabled="false"
+            android:scaleType="centerInside" />
+
+        <com.smartcity.activity.FrameLayoutFixed
+            android:id="@+id/record_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="2dp"
+            android:background="#ffffff"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#ffffffff"
+                android:orientation="horizontal"
+                android:paddingLeft="13dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/rec" />
+
+                <TextView
+                    android:id="@+id/recording_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="00:00"
+                    android:textColor="#4d4c4b"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </com.smartcity.activity.FrameLayoutFixed>
+
+        <ImageButton
+            android:id="@+id/chat_audio_send_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/white"
+            android:enabled="false"
+            android:paddingRight="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mic_button_states" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/chat_audio_send_button">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:layout_gravity="center_horizontal"
+                android:enabled="false"
+                android:textAllCaps="false"
+
+                android:id="@+id/activity_add_issue_button_play" />
+
+            <Button
+                android:layout_toRightOf="@id/activity_add_issue_button_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:layout_gravity="center_horizontal"
+                android:enabled="false"
+                android:textAllCaps="false"
+                android:layout_marginLeft="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/chat_audio_send_button"
+                android:id="@+id/activity_add_issue_button_send_audio" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_above="@id/bottom_relativelayout">
+
+        <SurfaceView
+            android:id="@+id/surfaceCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnCaptureVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Start Recording" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:background="@drawable/grey_bg"
+        android:layout_alignBottom="@id/bottom_relativelayout"
+        android:layout_marginBottom="25dp">
+
+        <ImageView
+            android:id="@+id/fragment_home_imageview_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/audio"
+            android:padding="3dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/fragment_home_imageview_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera"
+            android:padding="3dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/fragment_home_imageview_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/video"
+            android:padding="3dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</RelativeLayout>

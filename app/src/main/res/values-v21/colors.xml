@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="background">#fff8f4</color>
+    <color name="actionbar">#ff9503</color>
+    <color name="statusbar">#dc8002</color>
+    <color name="edittext_hint">#7d7d7d</color>
+    <color name="light_grey">#dbdbdb</color>
+
+    <color name="hint">#4e4f51</color>
+    <color name="orange">#f89b1c</color>
+    <color name="title">#000102</color>
+    <color name="red">#f91c05</color>
+    <color name="green">#04b51d</color>
+
+    <color name="edittext">#a6a5a5</color>
+    <color name="hyperlink">#1e8ce9</color>
+    <color name="all_text_color_black">#3f3f3f</color>
+    <color name="drawerBackGround">#646263</color>
+    <color name="drawerLightGround">#797979</color>
+    <color name="yellow">#ffff66</color>
+    <color name="dark_grey">#646363</color>
+</resources>

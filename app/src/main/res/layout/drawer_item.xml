@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingTop="8dp"
+    android:id="@+id/bg"
+    android:background="@color/drawerBackGround"
+    android:paddingBottom="8dp"
+    android:layout_height="match_parent">
+
+    <com.smartcity.util.TextViewRoboto
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical|center"
+        android:textColor="@color/yellow"
+        android:singleLine="true"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Hello"/>
+
+    <com.smartcity.util.TextViewRoboto
+        android:id="@+id/title_arrow"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/yellow"
+        android:singleLine="true"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"
+        android:text=">>"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/linearlayout_grey_line"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/drawerLightGround"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_yellow_lines"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/yellow"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/yellow"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.smartcity.util.TextViewRoboto
+        android:id="@+id/dialog_message_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:textSize="18dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.smartcity.util.TextViewRoboto
+                    android:id="@+id/dialog_message_deading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:textSize="16dp"/>
+
+                <com.smartcity.util.TextViewRoboto
+                    android:id="@+id/dialog_message_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="message"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/statusbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/statusbar">
+
+            <com.smartcity.util.TextViewRoboto
+                android:layout_marginLeft="0.1dp"
+                android:layout_weight="1"
+                android:id="@+id/dialog_message_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_ok"
+                android:paddingBottom="8dp"
+                android:paddingTop="10dp"
+                android:gravity="center_horizontal"
+                android:background="@color/white"
+                android:textColor="@color/statusbar"
+                android:textSize="18dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

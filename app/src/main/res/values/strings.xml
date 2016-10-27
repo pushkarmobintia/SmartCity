@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">SmartCity</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="server_unregister_error">server unregister error</string>
+    <string name="server_register_error">server register error</string>
+    <string name="gcm_error">gcm error</string>
+    <string name="gcm_unregistered">gcm unregistered</string>
+    <string name="gcm_deleted">gcm deleted</string>
+    <string name="gcm_recoverable_error">gcm recoverable error</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="font_name">fonts/ptsansregular.ttf</string>
+    <string name="font_name_">ptsansregular.ttf</string>
+    <string name="name">Name</string>
+
+    <string name="toast_exit">Please press BACK again to exit</string>
+    <string name="business_registrations">Registration</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="primarymobile">Primary Mobile</string>
+    <string name="secondarymobile">Secondary Mobile</string>
+    <string name="email">Email ID</string>
+    <string name="pincode">Pincode</string>
+    <string name="address">Address</string>
+    <string name="landmark">Landmark</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="save">Save</string>
+    <string name="please_wait">Please wait</string>
+    <string name="no_internet_connection">Please check your internet connection.</string>
+    <string name="error_name_null">Please enter first name.</string>
+    <string name="error_last_name_null">Please enter last name.</string>
+    <string name="error_primary_mobile_null">Please enter primary mobile number.</string>
+    <string name="error_secondary_mobile_null">Please enter secondary mobile number.</string>
+    <string name="error_email_null">Please enter email id.</string>
+    <string name="error_pincode_null">Please enter pincode.</string>
+    <string name="error_address_null">Please enter address.</string>
+    <string name="error_city_null">Please enter city.</string>
+    <string name="error_state_null">Please enter state.</string>
+    <string name="error_country_null">Please enter country.</string>
+    <string name="error_landmark_null">Please enter landmark.</string>
+    <string name="GPSAlertDialogTitle">Enable GPS</string>
+    <string name="GPSAlertDialogMessage">Turn ON your GPS</string>
+    <string name="cancel">Cancel</string>
+    <string name="internal_storage">Internal Storage</string>
+    <string name="chooser_title">Choose from...</string>
+
+    <string name="Are_you_sure_want_to_clear_notification">Are you sure want to delete all notifications?</string>
+    <string name="Are_you_sure_want_to_clear_complaints">Are you sure want to delete all complaints?</string>
+    <string name="Dialog_exit_yes">Yes</string>
+    <string name="Dialog_exit_no">No</string>
+    <string name="title_notification">Notifications</string>
+    <string name="are_you_sure_you_want_upload">Are you sure want to upload this photo?</string>
+    <string name="are_you_sure_you_want_upload_audio">Are you sure want to upload this audio?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="upload_success">Your complaint is submitted successfully.</string>
+    <string name="upload_failed">Falied to upload complaint.</string>
+    <string name="title_complaints">Complaints</string>
+    <string name="home">Home</string>
+    <string name="security">Security</string>
+    <string name="privacy">Privacy</string>
+    <string name="notification">Notification</string>
+    <string name="complaints">Complaints</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="button_ok">Ok</string>
+    <string name="security_deading">Community Guidelines</string>
+    <string name="security_message"><![CDATA[Smart City is about sharing moments. Our goal in creating these rules is to accommodate the broadest range of self expression while balancing the need for Smart Cityters to be able to use our service safely and enjoyably.\n\nDon’t send people Snaps they don’t want to receive—especially if the Snap is mean.\n\n  Be thoughtful about what you Snap and whom you send it to. It’s okay with us if someone takes a screenshot, but we can’t speak for you or your friends. Smart City attempts to detect screenshots and notify the sender, but it doesn’t always work perfectly. And keep in mind that your friend can always capture the image with good camera.\n\n  Keep it legal. Don’t use Smart City for any illegal shenanigans.\n\n  Camera and photos. Many of our services require us to collect images and other information from your device’s camera and photos. For example, you won’t be able to send Snaps or upload photos from your camera roll unless we can access your camera or photos.\n\n Location information. When you use our services, we may collect information about your location. With your consent, we may also collect information about your precise location using methods that include GPS, wireless networks, cell towers, Wi-Fi access points and other sensors such as gyroscopes, accelerometers and compasses. \n\nWhat not to Snap:\n\nPornography Smart City prohibits accounts that use public Stories to distribute sexually explicit content or promote sexually explicit content found outside of Smart City.\nSexually explicit content includes Snaps that depict real or implied sexual acts or nudity in a sexual context.\n\nInvasions of privacy\n\n Do not take Snaps of people without their knowledge and consent.\nTake extra care not to violate people’s privacy in private spaces, like someone’s home, a bathroom, dressing room, or locker room.\n\nThreats\n\nNever threaten to harm a person, group of people, or their property.\n\nIntimidating people is not okay.\n\nHarassment, bullying, or spamming\n\nThis one should be simple: Do not bother or make other people feel bad on purpose.\n\nIf someone blocks you, it’s not okay to contact them from another account.\n\nImpersonation Don’t pretend to be someone you’re not—including celebrities, brands, or other organizations.\n\nIf you violate these rules, we may remove the offending content or terminate your account. If your account is terminated, you won’t be allowed to use Smart City again.\n\nPlease take these rules seriously and honor them in the spirit in which they are intended. The rules will change and evolve along with the Smart City user community. We will do our best to enforce them consistently and fairly, and ultimately we’ll try to do what we think is best in each situation, at our own discretion.]]></string>
+    <string name="privacy_deading">Your Privacy Matters</string>
+    <string name="privacy_message">At Smart City, we are absolutely committed to your privacy. We know that we must earn your trust—and keep it—every time you use Smart City and our other products. To make good on that promise, we’ve created this Privacy Center, where you’ll find a wealth of info about our approach to privacy.\n\nAll of the Smart City features you know and love were created by small teams of people, mostly at our office in Pune City. The people who build these and other products care deeply about privacy on a very personal level. New features go through an intense privacy review process—we talk about things, we debate them, and we work hard to build products we’re proud of and that we’ll want to use. After all, we use these products constantly, both at work and in our personal lives, and we handle your information with the same care that we use for ourselves, our family, and our friends.\n\nFrom the beginning, the way we treat your information has been very different from other technology companies. We don’t stockpile your Photos, and we don’t show your friends an ongoing history of everything you’ve ever posted. We believe that this approach makes the Smart City app feel less like a permanent record, and more like a conversation with friends.\n\nThe Smart City app is constantly evolving and adding new features, but our privacy principles remain unchanged. On Smart City, you choose when and how to express yourself and to whom.\n\nHappy Snapping!</string>
+    <string name="show_status">Show Status</string>
+    <string name="fullname">Full name</string>
+    <string name="contact_details">Contact Detail</string>
+    <string name="register">Register</string>
+    <string name="are_you_sure_you_want_make_call">Are you sure want to make a call?</string>
+    <string name="add_comments">Add Comments</string>
+</resources>

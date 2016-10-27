@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/splash_bg"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageview_logo"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_name"
+            android:layout_gravity="center_horizontal"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="match_parent"
+            android:fillViewport="false"
+            android:layout_below="@id/imageview_logo">
+
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.smartcity.util.EditTextRoboto
+                        android:hint="@string/fullname"
+                        android:id="@+id/firstname"
+                        android:background="@drawable/edit_text_yellow_line"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:singleLine="true"
+                        android:inputType="text"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:padding="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.smartcity.util.EditTextRoboto
+                        android:hint="@string/email"
+                        android:id="@+id/email"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/edit_text_yellow_line"
+                        android:layout_marginTop="3dp"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.smartcity.util.EditTextRoboto
+                        android:hint="@string/contact_details"
+                        android:id="@+id/primarymobile"
+                        android:background="@drawable/edit_text_yellow_line"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:layout_marginTop="3dp"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <com.smartcity.util.ButtonTextRoboto
+                        android:id="@+id/business_registration_form_one_button_save"
+                        android:text="@string/register"
+                        android:background="@drawable/register_btn"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.smartcity.MainActivity">
+
+    <item android:id="@+id/action_complaints" android:title="@string/title_complaints"
+        android:icon="@drawable/notes_icon"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/action_notification" android:title="@string/title_notification"
+        android:icon="@drawable/notification_icon"
+        android:orderInCategory="100" app:showAsAction="always" />
+</menu>

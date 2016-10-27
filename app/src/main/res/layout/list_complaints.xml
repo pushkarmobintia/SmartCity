@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingBottom="1dp"
+    android:background="@color/background"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <com.smartcity.util.TextViewRoboto
+                android:id="@+id/list_notification_textView_title"
+                android:textSize="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unread Notification 1"
+                android:textColor="@color/all_text_color_black"/>
+
+            <com.smartcity.util.TextViewRoboto
+                android:id="@+id/list_notification_textView_des"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/hyperlink"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:layout_gravity="bottom"
+                android:background="@color/edittext"></View>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

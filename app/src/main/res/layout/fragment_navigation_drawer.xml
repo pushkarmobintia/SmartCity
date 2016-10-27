@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/drawerBackGround"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/drawerLightGround"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mic_pressed"
+            android:layout_margin="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+
+            <com.smartcity.util.TextViewRoboto
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pallavi Barsagadey"
+                android:textColor="@color/white"
+                android:textSize="16dp"/>
+
+            <com.smartcity.util.TextViewRoboto
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pallavi@gsit.co.in"
+                android:textColor="@color/white"
+                android:textSize="16dp"/>
+
+            <com.smartcity.util.TextViewRoboto
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8087419790"
+                android:textColor="@color/white"
+                android:textSize="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:dividerHeight="0.1sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</LinearLayout>

@@ -12,7 +12,6 @@ import android.util.Log;
 import com.google.android.gcm.GCMBaseIntentService;
 import com.smartcity.activity.NotificationActivity;
 import com.smartcity.databasehelper.DatabaseHelper;
-import com.smartcity.model.NotificationsItem;
 import com.smartcity.util.Constants;
 
 //import com.androidexample.mobilegcm.R;
@@ -80,29 +79,36 @@ public class GCMIntentService extends GCMBaseIntentService {
 
         Log.i(TAG, "---------- Intent -------------" + intent.getDataString());
         Log.i(TAG, "---------- onMessage -------------");
-        String actual_message = intent.getExtras().getString("notification_message");
+       /* String notification_message = intent.getExtras().getString("notification_message");
         String notification_date = intent.getExtras().getString("notification_date");
-        //String regId = intent.getExtras().getString("registration_ids");
+        String notification_subject = intent.getExtras().getString("notification_subject");
+        String notification_sortMessage = intent.getExtras().getString("notification_sortMessage");
+        String notification_complaintId = intent.getExtras().getString("notification_complaintId");
+        String notification_address = intent.getExtras().getString("notification_address");
+        String notification_contactNumber = intent.getExtras().getString("notification_contactNumber");
 
-        Log.i("GCM", "message : " + actual_message);
+        Log.i("GCM", "message : " + notification_message);
+        Log.i("GCM", "message : " + notification_date);
+        Log.i("GCM", "message : " + notification_subject);
+        Log.i("GCM", "message : " + notification_sortMessage);
+        Log.i("GCM", "message : " + notification_complaintId);
+        Log.i("GCM", "message : " + notification_address);
+        Log.i("GCM", "message : " + notification_contactNumber);
 
 
         db = new DatabaseHelper(getApplicationContext());
-//        Calendar c = Calendar.getInstance();
-//        System.out.println("Current time => " + c.getTime());
 
-//        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy,hh:MM");
-//        String formattedDate = df.format(c.getTime());
-
-        NotificationsItem notificationItem = new NotificationsItem("" ,"",actual_message,notification_date);
+        NotificationsItem notificationItem = new NotificationsItem("", notification_message ,notification_date,notification_subject,notification_sortMessage,
+                notification_complaintId, notification_address, notification_contactNumber);
 
         long tag1_id = db.addInToNotification(notificationItem);
 
         Log.d("hi_ap_tag",tag1_id+"");
-//        Log.d("hi_ap_date",formattedDate+"");
         Log.d("hi_ap_noti_status", "call");
 
-        generateNotification(context, actual_message);
+        generateNotification(context, notification_message);*/
+
+
 //        db = new DatabaseHelper(getApplicationContext());
 
 //        int pos = actual_message.indexOf(":");
